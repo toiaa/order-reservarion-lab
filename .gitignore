@@ -1,0 +1,25 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+
+# Editors / OS
+.cursor/
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Personal learning notes (kept locally, not published)
+GUIDE.md
+NOTES.md

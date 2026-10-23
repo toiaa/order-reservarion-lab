@@ -1,0 +1,18 @@
+# Step 1 (GUIDE.md): fill in postgres + redis only. Add healthchecks and named volumes.
+# Step 3: add the api service.
+# Step 7: add kafka (+ zookeeper or KRaft mode).
+# Step 8: add inventory-consumer and outbox-publisher.
+# Step 9/10: add celery-worker and celery-beat.
+#
+# Don't add all of these at once — one per step, per GUIDE.md.
+
+services:
+  postgres:
+    image: postgres:16
+    # TODO: environment (POSTGRES_USER / POSTGRES_PASSWORD / POSTGRES_DB), pull from .env
+    # TODO: named volume for data persistence
+    # TODO: healthcheck (pg_isready)
+
+  redis:
+    image: redis:7
+    # TODO: healthcheck (redis-cli ping)
